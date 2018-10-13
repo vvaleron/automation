@@ -1,0 +1,10 @@
+{
+	"port": 8080,
+	"bodyLimit": "100kb",
+	"corsHeaders": ["Link"],
+	"dbConfig": {
+		"user": "valeriy.shkolniy",
+		"password": "Zydfhz17",
+		"url": "mongodb://<user>:<password>@ds117109.mlab.com:17109/node-open-api"
+	}
+}
