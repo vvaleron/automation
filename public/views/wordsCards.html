@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col-sm-6 col-md-5 col-lg-6">
+            <h2>Create New Card</h2>
+            <form role="form" class="create-cards" ng-submit="saveNewCard()">
+            <div class="form-group words">
+            <label for="email">Word:</label>
+            <input ng-model="word" type="text" class="form-control" placeholder="Enter the main word">
+            </div>
+
+            <div class="form-group forbidden-words">
+            <label>forbidden words:</label>
+            <input ng-model="taboowords[0]" type="text" class="form-control" placeholder="Enter some word which should be forbidden to use">
+            <input ng-model="taboowords[1]" type="text" class="form-control" placeholder="Enter some word which should be forbidden to use">
+            <input ng-model="taboowords[2]" type="text" class="form-control" placeholder="Enter some word which should be forbidden to use">
+            <input ng-model="taboowords[3]" type="text" class="form-control" placeholder="Enter some word which should be forbidden to use">
+            <input ng-model="taboowords[4]" type="text" class="form-control" placeholder="Enter some word which should be forbidden to use">
+            <input ng-model="taboowords[5]" type="text" class="form-control" placeholder="Enter some word which should be forbidden to use">
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">
+            <h2>Preview card</h2>
+            <div class="form-group forbidden-words">
+                <div preview-card></div></div>
+        </div>
+    </div>
+</div>
+<div cards-slider class="container-fluid"></div>

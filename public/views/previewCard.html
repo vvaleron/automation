@@ -1,0 +1,11 @@
+<div class="preview-container">
+    <div class="thumbnail" style="width: 230px; min-height: 270px; box-shadow: 0 0 1em grey; margin: 0 auto;">
+        <center style="margin-top: 5px;"><label style="color: #23527c">Describe:</label></center>
+        <center ng-if="!word"><p style="color: grey; font-size: 16px; font-style: italic;">some word</p></center>
+        <center><p style="color: #000; font-size: 16px; font-weight: bold;">{{ word }}</p></center>
+
+        <center><label style="color: tomato;">forbidden words:</label></center>
+        <center><p ng-repeat="tabooword in taboowords"
+                   style="color: #000; font-size: 16px; font-weight: bold; margin: 2px auto;">{{tabooword}}</p></center>
+    </div>
+</div>

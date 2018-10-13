@@ -1,0 +1,19 @@
+    <div class="scrollbar">
+        <div class="handle"></div>
+    </div>
+
+<div class="frame" id="basic" style="overflow: hidden; height: 200px; line-height: 200px;">
+    <ul class="clearfix">
+        <li ng-repeat="card in cards" style="width: 170px; background-color: transparent;">
+            <div class="thumbnail" style="margin: 2px;" ng-init="$last ? initSlider(): false">
+                <center style="margin-top: 5px; font-size: 12px;"><label style="color: #23527c">Describe:</label></center>
+                <center><p style="color: #000; font-size: 12px; font-weight: bold; margin-bottom: 4px;">{{ card.word }}</p></center>
+
+                <center><label style="color: tomato; font-size: 12px;">forbidden words:</label></center>
+                <center><p ng-repeat="tabooword in card.taboowords"
+                           style="color: #000; font-size: 12px; font-weight: bold; margin: 2px auto;">{{tabooword}}</p></center>
+            </div>
+    </ul>
+</div>
+    
+<ul class="pages"></ul>
